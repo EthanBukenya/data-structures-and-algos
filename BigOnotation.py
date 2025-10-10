@@ -28,3 +28,21 @@
         = O(n) , Therefore the Big O time Complexity is Order of n
         
  '''
+
+
+# real life example for an order of n program
+# a program returning the squared numbers in a list
+# Time grows linearlly as input size increases
+# returns: [4, 9, 16, 25]
+''' 
+def squared_numbers(numbers):
+    square_numbers = []
+    for number in numbers:
+        square_numbers.append(number*number)
+    return square_numbers
+
+
+numbers = [2, 3, 4, 5]
+print(squared_numbers(numbers))
+
+'''
