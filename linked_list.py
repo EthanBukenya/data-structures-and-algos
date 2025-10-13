@@ -11,3 +11,24 @@ class LinkedList:
     def insert_at_begining(self, data):
         node = Node(data, self.head)
         self.head = node
+
+    def print(self):
+        if self.head is None:
+            print("Linked List is empty")
+            return
+
+        itr = self.head
+        llstr = ''
+        while itr:
+            llstr += str(itr.data) + '-->'
+            itr = itr.next
+        print(llstr)
+
+
+if __name__ == '__main__':
+    ll = LinkedList()
+    ll.insert_at_begining(1)
+    ll.insert_at_begining(2)
+    ll.insert_at_begining(3)
+    ll.insert_at_begining(4)
+    ll.print()
