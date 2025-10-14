@@ -95,7 +95,7 @@ class LinkedList:
 
         itr = self.head
         while itr:
-            if itr.next == data_after:
+            if itr.data == data_after:
                 itr.next = Node(data_to_insert, itr.next)
                 break
 
