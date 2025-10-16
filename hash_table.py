@@ -22,7 +22,7 @@ class HashTable:
                 found = True
                 break
         if not found:
-            self.arr[h].append(key, val)
+            self.arr[h].append((key, val))
 
     def __getitem__(self, index):
         h = self.get_hash(index)
