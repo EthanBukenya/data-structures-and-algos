@@ -34,3 +34,4 @@ s.pop()
 
 print(s.peek())
 print(s.size())
+print(s.container)
