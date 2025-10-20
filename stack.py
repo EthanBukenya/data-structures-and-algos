@@ -1,3 +1,4 @@
+# A stack is a Last-In-First-Out operational container (LIFO)
 from collections import deque
 
 
