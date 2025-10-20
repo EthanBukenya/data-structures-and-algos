@@ -1,3 +1,4 @@
+# A Queue is a First-In-First-Out operational container(FIFO)
 from collections import deque
 
 
