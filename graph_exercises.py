@@ -1,15 +1,14 @@
 class Graph:
     def __init__(self, edges):
         self.edges = edges
-        self.graph_dict = {}
+        self.graph_dict = []
 
         for start, end in self.edges:
-            if start in self.graph_dict:
-                self.graph_dict[start].append(end)
+            if start in self.graph_dict[start]:
+                self.graph_dict.append(end)
             else:
                 self.graph_dict[start] = [end]
-
-        print("graph routes : ", self.graph_dict)
+        print("graph dict is :", self.graph_dict)
 
     def get_paths(self, start, end, path=[]):
         path = path + [start]
@@ -27,13 +26,3 @@ class Graph:
                 for p in new_paths:
                     paths.append(p)
         return paths
-
-
-if __name__ == '__main__':
-    routes = [
-        ("Kampala", "Nairobi"),
-        ("Kampala", "Dar Es Salaam"),
-        ("Entebbe", "Soroti")
-    ]
-
-    graph_routes = Graph(routes)
