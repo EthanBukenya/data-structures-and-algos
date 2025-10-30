@@ -111,4 +111,4 @@ if __name__ == '__main__':
     numbers_tree = build_tree(numbers)
     # print(numbers_tree.in_order_traversal())
 
-    print(numbers_tree.search(20))
+    print(numbers_tree.search(4))

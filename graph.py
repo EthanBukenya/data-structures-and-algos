@@ -52,16 +52,12 @@ if __name__ == '__main__':
     routes = [
         ("Kampala", "Nairobi"),
         ("Kampala", "Dodoma"),
-        ("Dodoma", "Nairobi"),
-        ("Dodoma", "Dar Es Salaam"),
-        ("Entebbe", "Soroti"),
         ("Nairobi", "Dar Es Salaam"),
         ("Kampala", "Dar Es Salaam")
     ]
 
     graph_routes = Graph(routes)
-    start = "Kampala"
-    end = "Dar Es Salaam"
+    start = "Kampala", end = "Dar Es Salaam"
 
     print(f"graph routes between {start} and {end} are : ",
           graph_routes.get_paths(start, end))
