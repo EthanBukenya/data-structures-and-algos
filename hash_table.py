@@ -39,16 +39,20 @@ class HashTable:
 
 h = HashTable()
 
-print(h.get_hash('march 6'))
-print(h.get_hash('march 17'))
 
 h['march 6'] = 120
 h['march 7'] = 108
 h['march 17'] = 459
 h['march 9'] = 209
 h['march 8'] = 208
+h['march 8'] = 100001
+
+
+print(h.get_hash('march 6'))
+print(h.get_hash('march 17'))
+print(h.get_hash('march 8'))
 
 print(h['march 6'])
 print(h['march 17'])
 # del h['march 7']
-# print(h.arr)
+print(h.arr)
