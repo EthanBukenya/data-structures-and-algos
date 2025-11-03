@@ -1,21 +1,21 @@
 # binary search algorithm implementation
 # linear search is O(n) while binary search is O(log n) since the list is divided into 2 for evry iteration
 
-transactions = [{
-    'name': 'Ethan',
-    'device_id': 'ldw47',
-    'amount': '1200'
-},
-    {
-    'name': 'liberty',
-    'device_id': 'Tvw743',
-    'amount': '1407'
-},
-    {
-    'name': 'Bukenya',
-    'device_id': 'dmx300',
-    'amount': '800'
-}]
+# transactions = [{
+#     'name': 'Ethan',
+#     'device_id': 'ldw47',
+#     'amount': '1200'
+# },
+#     {
+#     'name': 'liberty',
+#     'device_id': 'Tvw743',
+#     'amount': '1407'
+# },
+#     {
+#     'name': 'Bukenya',
+#     'device_id': 'dmx300',
+#     'amount': '800'
+# }]
 
 
 # def find_transaction(transactions):
@@ -56,6 +56,7 @@ def binary_search(numbers_list, number_to_find):
             left_index = mid_index + 1
         else:
             right_index = mid_index - 1
+
     return -1
 
 
