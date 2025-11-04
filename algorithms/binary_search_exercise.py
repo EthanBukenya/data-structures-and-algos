@@ -36,6 +36,29 @@ def binary_search_recurssive(numbers_list, number_to_find, left_index, right_ind
     return binary_search_recurssive(numbers_list, number_to_find, left_index, right_index)
 
 
+def find_all_occurances(numbers, number_to_find):
+    index = binary_search(numbers, number_to_find)
+    indices = [index]
+
+    i = index-1
+    while i >= 0:
+        if numbers[i] == number_to_find:
+            indices.append(i)
+        else:
+            break
+        i = i - 1
+
+        i = index + 1
+    while i <= len(numbers):
+        if numbers[i] == number_to_find:
+            indices.append(i)
+        else:
+            break
+        i = i + 1
+
+    return sorted(indices)
+
+
 if __name__ == '__main__':
     # numbers_list = [1, 3, 5, 7, 9, 10]
     # number_to_find = 7
@@ -49,3 +72,8 @@ if __name__ == '__main__':
         numbers_list, number_to_find, 0, len(numbers_list))
 
     print(f"the mid number index is {index} ")
+
+    numbers = [1, 4, 6, 9, 11, 15, 15, 15, 17, 21, 34, 34, 56]
+    number_to_find = 15
+    indices = find_all_occurances(numbers, number_to_find)
+    print(f"Indices of occurances of {number_to_find} are {indices}")

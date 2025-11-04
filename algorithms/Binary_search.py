@@ -62,9 +62,9 @@ if __name__ == '__main__':
 
     # print(f"the mid number index is {index} ")
 
-    numbers_list = [1, 3, 5, 7, 9, 10]
-    number_to_find = 7
-    index = binary_search_recurssive(
-        numbers_list, number_to_find, 0, len(numbers_list))
+    # numbers_list = [1, 3, 5, 7, 9, 10]
+    # number_to_find = 7
+    # index = binary_search_recurssive(
+    #     numbers_list, number_to_find, 0, len(numbers_list))
 
-    print(f"the mid number index is {index} ")
+    # print(f"the mid number index is {index} ")
