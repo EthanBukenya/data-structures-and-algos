@@ -31,7 +31,7 @@ def binary_search_recurssive(numbers_list, number_to_find, left_index, right_ind
     if mid_number < number_to_find:
         left_index = mid_number + 1
     else:
-        right_index = mid_number + 1
+        right_index = mid_number - 1
 
     return binary_search_recurssive(numbers_list, number_to_find, left_index, right_index)
 
