@@ -15,4 +15,5 @@ def bubble_sort(elements):
 if __name__ == '__main__':
 
     elements = [9, 3, 7, 5, 9, 2]
-    print(bubble_sort(elements))
+    bubble_sort(elements)
+    print(elements)
