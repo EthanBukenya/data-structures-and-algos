@@ -31,7 +31,7 @@ def quick_sort(elements, start, end):
         quick_sort(elements, pi + 1, end)
 
 
-if __name__ == "__main__":
-    elements = [11, 9, 29, 7, 2, 15, 28]
+if __name__ == '__main__':
+    elements = [20, 11, 9, 29, 7, 2, 15, 28]
     quick_sort(elements, 0, len(elements) - 1)
     print(elements)
